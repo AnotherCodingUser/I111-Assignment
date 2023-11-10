@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat|Nunito|Poppins|Roboto+Condensed&display=swap">
+  <script src="js/scripts.js" defer></script>
+  
+  <title>New Zealand Weather </title>
+</head>
+
+<body>
+ 
+    <nav class="top-nav bar">
+        <img src="images/logo.png" alt="Logo of website">
+    </nav>
+    <section class="containing-element">
+      <header class="main-header">
+        <h1>The Forecast</h1>
+      </header>
+      <nav class="search-bar">
+        <div>
+          <a href="about.html">About</a>
+          <a href="terms.html">Terms</a>
+        </div>
+        <select id="cityInputValue" onchange="updateComboChange()">
+            <option value="Auckland">Auckland</option>
+            <option value="Christchurch">Christchurch</option>
+            <option value="Wellington">Wellington</option>
+            <option value="Hamilton">Hamilton</option>
+            <option value="Tauranga">Tauranga</option>
+            <option value="Napier">Napier</option>
+            <option value="Dunedin">Dunedin</option>
+            <option value="Palmerston North" selected>Palmerston North</option>
+            <option value="Nelson">Nelson</option>
+            <option value="Rotorua">Rotorua</option>
+            <option value="New Plymouth">New Plymouth</option>
+            <option value="Whangarei">Whangarei</option>
+            <option value="Invercargill">Invercargill</option>
+            <option value="Whanganui">Whanganui</option>
+            <option value="Gisborne">Gisborne</option>
+            <option value="Timaru">Timaru</option>
+            <option value="Blenheim">Blenheim</option>
+            <option value="Taupo">Taupo</option>
+            <option value="Masterton">Masterton</option>
+            <option value="Ashburton">Ashburton</option>
+        </select>
+      </nav>
+      <section class="main-outter-wrapper">
+          <div> <!--Content-->
+              <header class="bar"><h4>Content</h4></header>
+              <section class="top-outter-wrapper-left">          
+                <div class="content" id="current-weather">
+                  <img src="images/weather/sun.jpg" alt="Sunny pup">
+                </div>
+                <div class="content">
+                  <p>Weather influences our daily activies. Sunny days bring joy and outdoor fun, while sotrmy days force poeple indoors, highlighting weather's volitale nature.</p>
+                </div>
+              </section>
+            </div>
+          <div> <!--Currently-->
+            <header class="bar"><h4>Currently</h4></header>
+            <div class="content">
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li"><i class="far fa-flag" style="color: #b8d7f3;"></i></span>Country: <span id="Country">NZ</span>
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fas fa-city" style="color: #b8d7f3;"></i></span>City: <span id="City">Palmerston North</span>
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fas fa-thermometer-half" style="color: #b8d7f3;"></i></span>Temperature: <span id="Temperature">11.9* C</span>
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fas fa-question-circle" style="color: #b8d7f3;"></i></span>Description: <span id="Description">clear sky</span>
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fas fa-wind" style="color: #b8d7f3;"></i></span>Wind speed: <span id="WindSpeed">4.64 m/s </span>
+                </li>
+              </ul>
+              
+          </div>
+          </div>
+          <div> <!--Forcasts-->
+              <header class="bar"><h4>Forecasts</h4></header>
+              <div class="content" id="weather-info-grid">           
+                  <div class="card">Loading Forcasts</div>
+              </div>
+          </div>
+          <div> <!--Map-->
+            <header class="bar">
+              <h4>Map</h4>
+            </header>
+            <div class="content">
+              <div id="map"></div>
+            </div>
+          </div>
+      </section>
+      <footer class="bar">
+        <h4>&copy; Patrick - 2023</h4>
+      </footer>
+    </section>
+
+</body>
+
+</html>

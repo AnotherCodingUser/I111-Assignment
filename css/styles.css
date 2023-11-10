@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+}
+
+.containing-element {
+  width: 1000px;
+  left: 470px;
+  position: absolute;
+}
+
+nav.top-nav.bar {
+  color: #ffffff;
+  background-color: rgb(150,150, 182);
+  width: 100%;
+  padding: 3px 3px 3px 1rem;
+  display: flex;
+  
+}
+
+.top-nav img {
+  width: 2rem;
+}
+.bar {
+  width: 100%;
+  background-color: rgb(150,150, 182);
+}
+
+header.bar {
+  border-top-right-radius: 1rem;
+}
+
+footer.bar{
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-top: 1rem;
+}
+h4 {
+  padding: 4px 4px 4px 1rem;
+  color:#ffffff;
+}
+
+header.main-header {
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  width: 100%;
+}
+
+h1 {
+  line-height: 6rem;
+  padding-left: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav.search-bar {
+  display: flex;
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 9px 1rem 9px 1rem;
+  justify-content: space-between;
+}
+nav.search-bar div a {
+  text-decoration: none;
+  padding-right: 1rem;
+}
+select{
+  padding: 3px;
+  border: 1px;
+  border-radius: 0.25rem;
+  
+}
+
+.main-outter-wrapper {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+section.top-outter-wrapper-left {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  
+}
+div.content{
+  border: 1rem solid #eeeeee;
+  padding: 1rem;
+
+}
+div.content img {
+  width: 255.5px;    
+  display: flex;
+  
+}
+
+.content p { 
+  margin: -12px 0px -12px 0px;
+  line-height: 2.15rem;
+}
+
+li { 
+  line-height: 2.14;
+  padding-left: 14px;
+}
+ul.fa-ul {
+  margin: -12px 0px -12px 25px;
+}
+
+
+#weather-info-grid.content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3,1fr);
+  
+  grid-gap: 1rem;
+  border: 1rem solid #eeeeee;
+}
+
+.card {
+  background-color: #bdd7e9;
+  border: 1px solid rgb(150,150,182);
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.card .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .header img {
+  width: 30%;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#map {
+
+  height: 219px;
+}
